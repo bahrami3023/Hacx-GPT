@@ -27,7 +27,7 @@ class Colors:
     BLUE = "\033[0;34m"
     PURPLE = "\033[0;35m"
     CYAN = "\033[0;36m"
-     = "\033[0;37m"
+    WHITE = "\033[0;37m"
     B_BLACK = "\033[1;30m"
     B_RED = "\033[1;31m"
     B_GREEN = "\033[1;32m"
@@ -81,7 +81,7 @@ def Type(data):
     print(Fore.LIGHTBLUE_EX + "└─ " + w + "\033[1;37m" + data)
 
 
-def blacktechx_type_text(text: str, color: str = colors., end: str = '\n', speed: float = 0.02) -> None:
+def blacktechx_type_text(text: str, color: str = colors.WHITE, end: str = '\n', speed: float = 0.02) -> None:
     """
       Prints text with a typing effect.
       Args:
