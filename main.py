@@ -355,7 +355,7 @@ class Main:
                 blacktechx_type_text(f'Error generating response: {e}', color=colors.RED)
             blacktechx_backslash()
             ask_again = blacktechx_question("Do you want to ask again or return to the main menu? [y/n]", color=colors.CYAN,
-                                      input_color=colors.)
+                                      input_color=colors.WHITE)
             if ask_again.lower() in ['n', 'no']:
                 break
         blacktechx_hacx_banner()
