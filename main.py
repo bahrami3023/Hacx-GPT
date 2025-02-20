@@ -6,7 +6,7 @@ try:
     import openai
     from pwinput import pwinput
     from colorama import Fore
-    from dotenv import load_dotenv
+    from dotenv import load_dotenv 
     import requests
 except ImportError:
     _ = os.system('pip install pwinput requests colorama openai python-dotenv' if os.name == 'nt' else 'pip3 install pwinput requests colorama openai python-dotenv')
@@ -78,7 +78,7 @@ def blacktechx_backslash() -> None:
     print('\n')
 
 def Type(data):
-    print(Fore.LIGHTBLUE_EX + "└─ " + w + "\033[1;37m" + data)
+    print(Fore.LIGHTBLUE_EX + "└─ " + colors.WHITE+ "\033[1;37m" + data)
 
 
 def blacktechx_type_text(text: str, color: str = colors.WHITE, end: str = '\n', speed: float = 0.02) -> None:
@@ -365,9 +365,9 @@ class Main:
     def configure_api_key(self) -> None:
         """Configures the OpenAI API key."""
         blacktechx_banner_()
-        blacktechx_type_text('Please get your API keys from <FreshAccount recommended>: https://platform.openai.com/account/api-keys', color=colors.)
+        blacktechx_type_text('Please get your API keys from <FreshAccount recommended>: https://platform.openai.com/account/api-keys', color=colors.WHITE)
         blacktechx_backslash()
-        api_key = blacktechx_question("Enter your OpenAI API key:", color=colors.CYAN, input_color=colors.)
+        api_key = blacktechx_question("Enter your OpenAI API key:", color=colors.CYAN, input_color=colors.WHITE)
         blacktechx_backslash()
         with open('key.txt', 'w') as f:
             f.write(str(api_key))
